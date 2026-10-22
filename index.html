@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#4d3428">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="3 Razões Vendas">
+<meta name="description" content="Força de vendas offline da 3 Razões">
+<link rel="manifest" href="manifest.json">
+<title>3 Razões | Força de Vendas</title>
+<style>
+:root{--brown:#4d3428;--cream:#fbf7f1;--gold:#bd8b53;--ink:#28221e;--muted:#766b63;--line:#e6ddd4;--green:#2f704b;--red:#a33b32}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}header{background:var(--brown);color:white;padding:18px 18px 14px;position:sticky;top:0;z-index:5;box-shadow:0 2px 8px #0002}header .brand{font-weight:850;letter-spacing:.06em;font-size:1.25rem}header small{display:block;color:#ead9c8;margin-top:3px}.wrap{max-width:1050px;margin:auto;padding:16px 14px 100px}.stepper{display:flex;gap:6px;overflow:auto;margin:0 0 18px}.step{border:1px solid var(--line);border-radius:999px;padding:9px 13px;font-size:.85rem;white-space:nowrap;background:white;color:var(--muted);cursor:pointer}.step.active{background:var(--brown);color:white;border-color:var(--brown)}h1{font-size:1.4rem;margin:6px 0 4px}p.hint{margin:0 0 16px;color:var(--muted);font-size:.94rem}.panel{background:white;border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:14px;box-shadow:0 2px 8px #35231808}.field{display:flex;flex-direction:column;gap:6px;margin:10px 0}label{font-size:.88rem;font-weight:650}input,select,textarea,button{font:inherit}input,select,textarea{width:100%;padding:12px;border:1px solid #d7ccc2;border-radius:10px;background:white;color:var(--ink)}textarea{min-height:78px;resize:vertical}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:white;display:flex;flex-direction:column}.photo{height:145px;background:#f0e7dd;display:flex;align-items:center;justify-content:center;color:#9b897a;font-size:2rem;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover}.productbody{padding:12px;display:flex;flex-direction:column;gap:7px;flex:1}.product h3{font-size:1rem;margin:0}.product p{font-size:.86rem;color:var(--muted);margin:0;line-height:1.35}.price{font-size:1.05rem;font-weight:800;color:var(--brown)}button,.btn{border:0;border-radius:10px;background:var(--brown);color:white;padding:12px 14px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none}.btn.secondary,button.secondary{background:#efe7df;color:var(--brown)}button.green{background:var(--green)}button.danger{background:var(--red)}button:disabled{opacity:.45;cursor:not-allowed}.row{display:flex;gap:10px;align-items:center}.row>*{flex:1}.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.actions button{flex:1;min-width:130px}.pill{display:inline-block;border-radius:999px;background:#f0e7dd;color:var(--brown);padding:5px 9px;font-size:.8rem}.cartline{display:grid;grid-template-columns:1fr 85px 90px 34px;gap:8px;align-items:center;border-bottom:1px solid var(--line);padding:10px 0}.cartline input{padding:8px}.totals{background:#f8f1e9;border-radius:12px;padding:13px;margin-top:12px}.totalrow{display:flex;justify-content:space-between;gap:10px;margin:5px 0}.totalrow.final{font-size:1.15rem;font-weight:850;border-top:1px solid #dacabb;padding-top:9px;margin-top:9px}.muted{color:var(--muted);font-size:.88rem}.empty{text-align:center;padding:28px 12px;color:var(--muted)}.hidden{display:none!important}.notice{background:#edf5ee;border:1px solid #c9e0ce;padding:12px;border-radius:12px;font-size:.9rem}.small{font-size:.82rem}.topline{display:flex;justify-content:space-between;gap:10px;align-items:center}.catalogadmin{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ordercard{border:1px solid var(--line);border-radius:12px;padding:12px;margin:8px 0;background:white}.ordercard strong{display:block}.filelabel{display:inline-flex;background:#efe7df;color:var(--brown);border-radius:10px;padding:10px 12px;font-weight:700;cursor:pointer}.filelabel input{display:none}.footer{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);padding:9px 12px calc(9px + env(safe-area-inset-bottom));z-index:6;display:flex;justify-content:center}.footer .inner{width:100%;max-width:1050px;display:flex;gap:8px}.footer button{flex:1;padding:11px 8px;font-size:.88rem}.status{font-size:.8rem;color:#f5e6d6;margin-top:5px}@media(min-width:720px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.photo{height:190px}.wrap{padding:22px 24px 110px}.catalogadmin{grid-template-columns:repeat(3,1fr)}}@media(max-width:430px){.cartline{grid-template-columns:1fr 65px 78px 30px}.grid{gap:8px}.productbody{padding:10px}.photo{height:120px}.step{padding:8px 10px}}@media print{header,.stepper,.no-print,.footer{display:none!important}body{background:white}.wrap{max-width:none;padding:0}.panel{box-shadow:none;border:0;padding:0}.print-only{display:block!important}button{display:none!important}}
+</style>
+</head>
+<body>
+<header><div class="brand">3 RAZÕES</div><small>Força de vendas · Cafeterias</small><div id="connection" class="status">Preparando aplicativo…</div></header>
+<div class="wrap">
+  <div class="stepper no-print" id="stepper">
+    <button class="step active" data-screen="client">1 · Cliente</button>
+    <button class="step" data-screen="catalog">2 · Catálogo</button>
+    <button class="step" data-screen="cart">3 · Carrinho</button>
+    <button class="step" data-screen="orders">4 · Pedidos</button>
+    <button class="step" data-screen="settings">5 · Cadastros</button>
+  </div>
+
+  <section id="screen-client">
+    <h1>Selecionar cliente</h1><p class="hint">Escolha a cafeteria para iniciar um pedido.</p>
+    <div class="panel">
+      <div class="field"><label for="clientSearch">Buscar cliente</label><input id="clientSearch" placeholder="Nome da cafeteria…"></div>
+      <div id="clientList"></div>
+      <div class="actions"><button onclick="newClient()">＋ Cadastrar cliente</button><button class="secondary" onclick="go('catalog')">Continuar para catálogo →</button></div>
+    </div>
+    <div class="notice">Dica: cadastre primeiro os clientes e os produtos na área <b>Cadastros</b>. Os dados ficam salvos neste aparelho.</div>
+  </section>
+
+  <section id="screen-catalog" class="hidden">
+    <h1>Catálogo comercial</h1><p class="hint" id="catalogClient">Selecione um cliente antes de montar o pedido.</p>
+    <div class="field no-print"><label for="productSearch">Buscar produto</label><input id="productSearch" placeholder="Nome, sabor ou argumento de venda…"></div>
+    <div id="productList" class="grid"></div>
+    <div class="actions no-print"><button class="secondary" onclick="go('client')">← Trocar cliente</button><button onclick="go('cart')">Ver carrinho (<span id="cartCount">0</span>) →</button></div>
+  </section>
+
+  <section id="screen-cart" class="hidden">
+    <h1>Carrinho e condições comerciais</h1><p class="hint" id="cartClient"></p>
+    <div class="panel"><div id="cartLines"></div>
+      <div class="field"><label for="discount">Desconto geral (%)</label><input id="discount" type="number" min="0" max="100" step="0.5" value="0"></div>
+      <div class="row">
+        <div class="field"><label for="payment">Prazo / forma de pagamento</label><input id="payment" placeholder="Ex.: 7 dias, Pix, 14/21 dias"></div>
+        <div class="field"><label for="delivery">Entrega prevista</label><input id="delivery" type="date"></div>
+      </div>
+      <div class="field"><label for="notes">Observações do pedido</label><textarea id="notes" placeholder="Ex.: entregar pela manhã, falar com gerente…"></textarea></div>
+      <div class="totals" id="totals"></div>
+      <div class="actions no-print"><button class="secondary" onclick="go('catalog')">＋ Adicionar produtos</button><button class="green" onclick="finishOrder()">Finalizar e gerar PDF</button></div>
+    </div>
+  </section>
+
+  <section id="screen-orders" class="hidden">
+    <h1>Pedidos salvos</h1><p class="hint">Pedidos armazenados neste aparelho, inclusive sem internet.</p>
+    <div id="ordersList"></div>
+    <div class="actions no-print"><button class="secondary" onclick="exportBackup()">Exportar cópia de segurança</button><label class="filelabel">Importar cópia<input type="file" accept="application/json" onchange="importBackup(event)"></label></div>
+  </section>
+
+  <section id="screen-settings" class="hidden">
+    <h1>Cadastros</h1><p class="hint">Cadastre os clientes e as mercadorias da 3 Razões.</p>
+    <div class="panel">
+      <h2>Clientes / cafeterias</h2>
+      <div class="field"><label>Nome da cafeteria *</label><input id="cName" placeholder="Ex.: Café Central"></div>
+      <div class="row"><div class="field"><label>Contato</label><input id="cContact" placeholder="Nome do contato"></div><div class="field"><label>WhatsApp / telefone</label><input id="cPhone" placeholder="(21) 99999-9999"></div></div>
+      <div class="field"><label>Endereço</label><input id="cAddress" placeholder="Rua, número, bairro, cidade"></div>
+      <button onclick="saveClient()">Salvar cliente</button>
+      <div id="adminClients"></div>
+    </div>
+    <div class="panel">
+      <h2>Produtos</h2>
+      <div class="field"><label>Nome do produto *</label><input id="pName" placeholder="Ex.: Cookie de chocolate"></div>
+      <div class="row"><div class="field"><label>Preço unitário (R$) *</label><input id="pPrice" type="number" min="0" step=".01" placeholder="0,00"></div><div class="field"><label>Peso / embalagem</label><input id="pSize" placeholder="Ex.: 80 g / unidade"></div></div>
+      <div class="field"><label>Descrição do produto</label><textarea id="pDesc" placeholder="Ingredientes, textura, conservação, validade…"></textarea></div>
+      <div class="field"><label>Argumentos de venda para cafeterias</label><textarea id="pPitch" placeholder="Ex.: acompanha café especial, produto artesanal, ótima opção para vitrine…"></textarea></div>
+      <div class="field"><label>Foto do produto (opcional)</label><input id="pPhoto" type="file" accept="image/*"></div>
+      <button onclick="saveProduct()">Salvar produto</button>
+      <div id="adminProducts"></div>
+    </div>
+    <div class="panel">
+      <h2>Dados da 3 Razões</h2>
+      <div class="field"><label>Nome que aparecerá no pedido</label><input id="bizName" value="3 Razões"></div>
+      <div class="field"><label>Telefone / WhatsApp comercial</label><input id="bizPhone" placeholder="Contato comercial"></div>
+      <div class="field"><label>E-mail (opcional)</label><input id="bizEmail" type="email" placeholder="contato@exemplo.com"></div>
+      <button onclick="saveBusiness()">Salvar dados comerciais</button>
+    </div>
+    <div class="panel">
+      <h2>Dados e privacidade</h2><p class="muted">Os dados ficam no armazenamento local deste navegador. Não desinstale nem limpe os dados do navegador sem exportar uma cópia de segurança.</p>
+      <div class="actions"><button class="secondary" onclick="exportBackup()">Exportar backup</button><label class="filelabel">Importar backup<input type="file" accept="application/json" onchange="importBackup(event)"></label><button class="danger" onclick="clearAll()">Apagar todos os dados</button></div>
+    </div>
+  </section>
+</div>
+<div class="footer no-print"><div class="inner"><button class="secondary" onclick="go('client')">Cliente</button><button class="secondary" onclick="go('catalog')">Catálogo</button><button onclick="go('cart')">Carrinho <span id="footerCount">0</span></button><button class="secondary" onclick="go('orders')">Pedidos</button></div></div>
+
+<script>
+const $=id=>document.getElementById(id);
+const money=n=>new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(Number(n)||0);
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+let db={clients:[],products:[],orders:[],business:{name:'3 Razões',phone:'',email:''}};
+let selectedClientId=null, cart=[], currentScreen='client';
+function load(){try{const d=JSON.parse(localStorage.getItem('3razoes_db')||'null');if(d)db={...db,...d}}catch(e){}}
+function save(){localStorage.setItem('3razoes_db',JSON.stringify(db));renderAll()}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function go(screen){currentScreen=screen;document.querySelectorAll('[id^="screen-"]').forEach(x=>x.classList.add('hidden'));$('screen-'+screen).classList.remove('hidden');document.querySelectorAll('.step').forEach(x=>x.classList.toggle('active',x.dataset.screen===screen));renderAll();window.scrollTo(0,0)}
+document.querySelectorAll('.step').forEach(b=>b.addEventListener('click',()=>go(b.dataset.screen)));
+function selectedClient(){return db.clients.find(c=>c.id===selectedClientId)}
+function selectClient(id){selectedClientId=id;cart=[];go('catalog')}
+function renderClients(){let q=($('clientSearch').value||'').toLowerCase();let list=db.clients.filter(c=>(c.name+' '+c.contact+' '+c.address).toLowerCase().includes(q));$('clientList').innerHTML=list.length?list.map(c=>`<div class="ordercard"><div class="topline"><div><strong>${esc(c.name)}</strong><div class="muted">${esc(c.contact||'')}${c.phone?' · '+esc(c.phone):''}</div><div class="muted">${esc(c.address||'')}</div></div><button onclick="selectClient('${c.id}')">Selecionar</button></div></div>`).join(''):'<div class="empty">Nenhum cliente cadastrado. Use “Cadastrar cliente” ou a tela Cadastros.</div>'}
+$('clientSearch').addEventListener('input',renderClients);
+function renderProducts(){let q=($('productSearch').value||'').toLowerCase();$('catalogClient').textContent=selectedClient()?'Pedido para: '+selectedClient().name:'Selecione um cliente antes de montar o pedido.';let list=db.products.filter(p=>(p.name+' '+p.desc+' '+p.pitch+' '+p.size).toLowerCase().includes(q));$('productList').innerHTML=list.length?list.map(p=>`<article class="product"><div class="photo">${p.photo?`<img src="${p.photo}" alt="${esc(p.name)}">`:'🍪'}</div><div class="productbody"><h3>${esc(p.name)}</h3><div class="muted">${esc(p.size||'')}</div><div class="price">${money(p.price)}</div><p>${esc(p.desc||'')}</p>${p.pitch?`<p><b>Argumentos de venda:</b> ${esc(p.pitch)}</p>`:''}<button onclick="addProduct('${p.id}')" ${!selectedClientId?'disabled':''}>Adicionar ao carrinho</button></div></article>`).join(''):'<div class="empty">Nenhum produto cadastrado. Acesse Cadastros para incluir os produtos e as fotos.</div>';updateCount()}
+$('productSearch').addEventListener('input',renderProducts);
+function addProduct(id){if(!selectedClientId){alert('Selecione um cliente primeiro.');go('client');return}let p=db.products.find(x=>x.id===id);if(!p)return;let item=cart.find(x=>x.productId===id);if(item)item.qty++;else cart.push({productId:id,name:p.name,price:Number(p.price),size:p.size,qty:1});renderCart();go('cart')}
+function removeLine(i){cart.splice(i,1);renderCart()}
+function updateQty(i,v){cart[i].qty=Math.max(1,parseInt(v)||1);renderCart()}
+function renderCart(){let c=selectedClient();$('cartClient').textContent=c?'Cliente: '+c.name:'Nenhum cliente selecionado. Volte à tela Cliente.';$('cartLines').innerHTML=cart.length?cart.map((x,i)=>`<div class="cartline"><div><b>${esc(x.name)}</b><div class="muted">${money(x.price)} / un.</div></div><input aria-label="Quantidade" type="number" min="1" value="${x.qty}" onchange="updateQty(${i},this.value)"><b>${money(x.price*x.qty)}</b><button class="danger" style="padding:8px" onclick="removeLine(${i})">×</button></div>`).join(''):'<div class="empty">Seu carrinho está vazio. Vá ao catálogo para adicionar produtos.</div>';let sub=cart.reduce((s,x)=>s+x.price*x.qty,0),pct=Math.min(100,Math.max(0,Number($('discount').value)||0)),disc=sub*pct/100,total=sub-disc;$('totals').innerHTML=`<div class="totalrow"><span>Subtotal</span><b>${money(sub)}</b></div><div class="totalrow"><span>Desconto (${pct.toLocaleString('pt-BR')}%)</span><b>− ${money(disc)}</b></div><div class="totalrow final"><span>Total do pedido</span><span>${money(total)}</span></div>`;updateCount()}
+$('discount').addEventListener('input',renderCart);
+function updateCount(){let n=cart.reduce((s,x)=>s+x.qty,0);if($('cartCount'))$('cartCount').textContent=n;if($('footerCount'))$('footerCount').textContent=n}
+function newClient(){go('settings');$('cName').focus()}
+function saveClient(){let name=$('cName').value.trim();if(!name){alert('Informe o nome da cafeteria.');return}db.clients.push({id:uid(),name,contact:$('cContact').value.trim(),phone:$('cPhone').value.trim(),address:$('cAddress').value.trim()});['cName','cContact','cPhone','cAddress'].forEach(id=>$(id).value='');save();alert('Cliente salvo neste aparelho.')}
+async function saveProduct(){let name=$('pName').value.trim(),price=Number($('pPrice').value);if(!name||$('pPrice').value===''||price<0){alert('Informe nome e preço válido.');return}let photo='';let file=$('pPhoto').files[0];if(file){if(file.size>1500000){alert('A foto é grande. Escolha uma imagem de até 1,5 MB para não ocupar muito espaço.');return}photo=await new Promise((resolve,reject)=>{let r=new FileReader();r.onload=()=>resolve(r.result);r.onerror=reject;r.readAsDataURL(file)})}db.products.push({id:uid(),name,price,size:$('pSize').value.trim(),desc:$('pDesc').value.trim(),pitch:$('pPitch').value.trim(),photo});['pName','pPrice','pSize','pDesc','pPitch','pPhoto'].forEach(id=>$(id).value='');save();alert('Produto salvo no catálogo.')}
+function saveBusiness(){db.business={name:$('bizName').value.trim()||'3 Razões',phone:$('bizPhone').value.trim(),email:$('bizEmail').value.trim()};save();alert('Dados comerciais salvos.')}
+function renderAdmin(){ $('adminClients').innerHTML=db.clients.map(c=>`<div class="ordercard"><b>${esc(c.name)}</b><div class="muted">${esc(c.phone||'')}</div><button class="danger" style="margin-top:8px" onclick="deleteClient('${c.id}')">Excluir</button></div>`).join('');$('adminProducts').innerHTML=db.products.map(p=>`<div class="ordercard"><b>${esc(p.name)}</b> · ${money(p.price)}<div class="muted">${esc(p.size||'')}</div><button class="danger" style="margin-top:8px" onclick="deleteProduct('${p.id}')">Excluir</button></div>`).join('');$('bizName').value=db.business.name||'3 Razões';$('bizPhone').value=db.business.phone||'';$('bizEmail').value=db.business.email||''}
+function deleteClient(id){if(confirm('Excluir este cliente? Pedidos já salvos não serão apagados.')){db.clients=db.clients.filter(c=>c.id!==id);if(selectedClientId===id)selectedClientId=null;save()}}
+function deleteProduct(id){if(confirm('Excluir este produto do catálogo?')){db.products=db.products.filter(p=>p.id!==id);save()}}
+function finishOrder(){if(!selectedClient()){alert('Selecione um cliente antes de finalizar.');go('client');return}if(!cart.length){alert('Adicione pelo menos um produto ao carrinho.');go('catalog');return}let sub=cart.reduce((s,x)=>s+x.price*x.qty,0),pct=Math.min(100,Math.max(0,Number($('discount').value)||0));let order={id:uid(),number:'3R-'+new Date().toISOString().slice(0,10).replace(/-/g,'')+'-'+String(db.orders.length+1).padStart(3,'0'),date:new Date().toLocaleString('pt-BR'),client:{...selectedClient()},items:cart.map(x=>({...x})),subtotal:sub,discountPct:pct,discountValue:sub*pct/100,total:sub*(1-pct/100),payment:$('payment').value.trim(),delivery:$('delivery').value,notes:$('notes').value.trim(),business:{...db.business}};db.orders.unshift(order);save();openOrder(order.id);go('orders')}
+function orderHtml(o){return `<div class="print-order"><div style="display:flex;justify-content:space-between;gap:20px;border-bottom:2px solid #4d3428;padding-bottom:12px"><div><h1 style="margin:0">${esc(o.business.name||'3 Razões')}</h1><div>${esc(o.business.phone||'')}${o.business.email?' · '+esc(o.business.email):''}</div></div><div style="text-align:right"><h2 style="margin:0">PEDIDO ${esc(o.number)}</h2><div>${esc(o.date)}</div></div></div><h2>Cliente</h2><b>${esc(o.client.name)}</b><div>${esc(o.client.contact||'')}</div><div>${esc(o.client.phone||'')}</div><div>${esc(o.client.address||'')}</div><h2>Produtos</h2><table style="width:100%;border-collapse:collapse"><thead><tr><th style="text-align:left;border-bottom:1px solid #aaa;padding:7px">Produto</th><th style="text-align:right;border-bottom:1px solid #aaa;padding:7px">Qtd.</th><th style="text-align:right;border-bottom:1px solid #aaa;padding:7px">Unitário</th><th style="text-align:right;border-bottom:1px solid #aaa;padding:7px">Total</th></tr></thead><tbody>${o.items.map(x=>`<tr><td style="padding:7px;border-bottom:1px solid #ddd">${esc(x.name)} <small>${esc(x.size||'')}</small></td><td style="text-align:right;padding:7px;border-bottom:1px solid #ddd">${x.qty}</td><td style="text-align:right;padding:7px;border-bottom:1px solid #ddd">${money(x.price)}</td><td style="text-align:right;padding:7px;border-bottom:1px solid #ddd">${money(x.price*x.qty)}</td></tr>`).join('')}</tbody></table><div style="margin-left:auto;max-width:300px;margin-top:15px"><div style="display:flex;justify-content:space-between;padding:4px"><span>Subtotal</span><b>${money(o.subtotal)}</b></div><div style="display:flex;justify-content:space-between;padding:4px"><span>Desconto (${o.discountPct}%)</span><b>− ${money(o.discountValue)}</b></div><div style="display:flex;justify-content:space-between;border-top:2px solid #4d3428;padding:9px 4px;font-size:1.15em"><b>TOTAL</b><b>${money(o.total)}</b></div></div><h3>Condições comerciais</h3><div><b>Pagamento:</b> ${esc(o.payment||'A combinar')}</div><div><b>Entrega prevista:</b> ${o.delivery?esc(new Date(o.delivery+'T12:00:00').toLocaleDateString('pt-BR')):'A combinar'}</div><div><b>Observações:</b> ${esc(o.notes||'—')}</div><p style="margin-top:28px;color:#766b63;font-size:12px">Pedido comercial da 3 Razões. A produção e a entrega ficam sujeitas à confirmação.</p></div>`}
+function openOrder(id){let o=db.orders.find(x=>x.id===id);if(!o)return;let w=window.open('','_blank');if(!w){alert('O navegador bloqueou a abertura. Toque novamente em “Abrir / salvar PDF” e permita pop-ups para este site.');return}w.document.write(`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pedido ${esc(o.number)}</title><style>body{font:14px Arial,sans-serif;color:#28221e;padding:24px;max-width:900px;margin:auto}button{background:#4d3428;color:white;border:0;border-radius:8px;padding:12px 16px;font-size:16px;margin:0 0 20px}@media print{button{display:none}body{padding:0}}</style></head><body><button onclick="window.print()">Imprimir / Salvar como PDF</button>${orderHtml(o)}<script>window.onafterprint=()=>{}<\/script></body></html>`);w.document.close()}
+function renderOrders(){$('ordersList').innerHTML=db.orders.length?db.orders.map(o=>`<div class="ordercard"><div class="topline"><div><strong>${esc(o.number)} · ${esc(o.client.name)}</strong><div class="muted">${esc(o.date)} · ${o.items.length} item(ns)</div><div><b>${money(o.total)}</b> <span class="pill">Salvo neste aparelho</span></div></div><button onclick="openOrder('${o.id}')">Abrir / salvar PDF</button></div><div class="actions"><button class="secondary" onclick="shareOrder('${o.id}')">Compartilhar resumo</button><button class="secondary" onclick="duplicateOrder('${o.id}')">Repetir pedido</button><button class="danger" onclick="deleteOrder('${o.id}')">Excluir</button></div></div>`).join(''):'<div class="empty">Ainda não há pedidos salvos.</div>'}
+async function shareOrder(id){let o=db.orders.find(x=>x.id===id);if(!o)return;let txt=`Pedido ${o.number} — ${o.business.name}\nCliente: ${o.client.name}\n${o.items.map(x=>`${x.qty} × ${x.name}: ${money(x.price*x.qty)}`).join('\n')}\nSubtotal: ${money(o.subtotal)}\nDesconto: ${money(o.discountValue)}\nTOTAL: ${money(o.total)}\nPagamento: ${o.payment||'A combinar'}\nEntrega: ${o.delivery||'A combinar'}\nObservações: ${o.notes||'—'}`;if(navigator.share){try{await navigator.share({title:`Pedido ${o.number}`,text:txt})}catch(e){}}else if(navigator.clipboard){await navigator.clipboard.writeText(txt);alert('Resumo copiado. Cole no WhatsApp e anexe o PDF gerado na opção Abrir / salvar PDF.')}else alert(txt)}
+function duplicateOrder(id){let o=db.orders.find(x=>x.id===id);if(!o)return;selectedClientId=o.client.id;cart=o.items.map(x=>({...x}));$('discount').value=o.discountPct;$('payment').value=o.payment;$('delivery').value=o.delivery;$('notes').value=o.notes;go('cart')}
+function deleteOrder(id){if(confirm('Excluir este pedido salvo?')){db.orders=db.orders.filter(o=>o.id!==id);save()}}
+function exportBackup(){let blob=new Blob([JSON.stringify(db,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='backup-3razoes.json';a.click();URL.revokeObjectURL(a.href)}
+function importBackup(ev){let f=ev.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let d=JSON.parse(r.result);if(!d.clients||!d.products||!d.orders)throw Error();if(confirm('Importar backup e substituir os dados atuais deste aparelho?')){db=d;save();alert('Backup importado.')}}catch(e){alert('Arquivo de backup inválido.')}ev.target.value=''};r.readAsText(f)}
+function clearAll(){if(confirm('ATENÇÃO: isso apaga clientes, produtos e pedidos deste aparelho. Exporte um backup antes. Tem certeza?')){localStorage.removeItem('3razoes_db');db={clients:[],products:[],orders:[],business:{name:'3 Razões',phone:'',email:''}};selectedClientId=null;cart=[];save();alert('Dados locais apagados.')}}
+function renderAll(){renderClients();renderProducts();renderCart();renderOrders();renderAdmin()}
+load();renderAll();
+if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').then(()=>$('connection').textContent=navigator.onLine?'Pronto · dados salvos neste aparelho':'Offline · dados salvos neste aparelho').catch(()=>$('connection').textContent='Pronto · dados salvos neste aparelho');
+else $('connection').textContent='Dados salvos neste aparelho · instale após publicar em HTTPS';
+window.addEventListener('online',()=>$('connection').textContent='Conectado · dados salvos neste aparelho');
+window.addEventListener('offline',()=>$('connection').textContent='Offline · dados salvos neste aparelho');
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+3 RAZÕES — FORÇA DE VENDAS (PROTÓTIPO GRATUITO)
+================================================
+
+O que já funciona
+- Cadastro local de clientes/cafeterias.
+- Cadastro de produtos, preços, descrição, argumentos de venda e fotos.
+- Seleção de cliente e inclusão de produtos no carrinho.
+- Quantidades, desconto geral, prazo/forma de pagamento, entrega prevista e observações.
+- Salvamento de pedidos no aparelho.
+- Visualização de pedido em página pronta para imprimir/salvar como PDF.
+- Compartilhamento do resumo pelo menu de compartilhamento do iPad, quando disponível.
+- Exportação/importação de cópia de segurança em JSON.
+- Estrutura PWA com cache offline.
+
+IMPORTANTE SOBRE O OFFLINE
+Os dados ficam neste navegador/aparelho e não sincronizam automaticamente com Angélica ou outros aparelhos. Faça backups regulares. Para enviar PDF/resumo ao cliente e à Angélica, conecte-se à internet e use o menu de compartilhamento. O PDF é gerado por meio da tela de impressão do navegador.
+
+COMO TESTAR NO COMPUTADOR
+1. Extraia o ZIP.
+2. Abra index.html para testar as telas e cadastros.
+3. Alguns recursos PWA/offline só funcionam quando hospedados em HTTPS.
+
+COMO COLOCAR NO IPAD (gratuito)
+Para instalação como aplicativo e funcionamento offline confiável, publique estes arquivos em uma hospedagem HTTPS gratuita, por exemplo GitHub Pages:
+1. Crie/entre numa conta em https://github.com/
+2. Crie um repositório público chamado 3razoes-forca-vendas.
+3. Envie index.html, manifest.json e sw.js para a raiz do repositório.
+4. Em Settings > Pages, selecione a publicação a partir da branch main e da pasta /(root).
+5. Abra o endereço HTTPS publicado no Safari do iPad.
+6. Toque em Compartilhar > Adicionar à Tela de Início > Adicionar.
+7. Abra pelo ícone da tela inicial uma vez com internet. Depois, teste o modo avião.
+
+COMO USAR
+1. Entre em Cadastros e adicione os dados comerciais da 3 Razões.
+2. Cadastre as cafeterias/clientes.
+3. Cadastre cada produto com preço, peso/embalagem, descrição, argumentos e foto.
+4. Vá a Cliente, selecione a cafeteria e abra o Catálogo.
+5. Toque em Adicionar ao carrinho para cada produto.
+6. No Carrinho, ajuste quantidades, desconto, pagamento, entrega e observações.
+7. Toque em Finalizar e gerar PDF. O pedido fica salvo e abre uma página de impressão.
+8. No iPad, toque em Imprimir. Na prévia do iOS, abra a prévia do documento com o gesto de ampliar (afastar dois dedos) e use Compartilhar para salvar em Arquivos ou enviar pelo WhatsApp/Mail.
+9. Para compartilhar o resumo, abra Pedidos > Compartilhar resumo. Anexe também o PDF salvo, se necessário.
+10. Em Pedidos ou Cadastros, exporte backup regularmente e guarde em Arquivos/iCloud Drive.
+
+LIMITAÇÕES DESTA PRIMEIRA VERSÃO
+- Não sincroniza dados entre dispositivos nem envia automaticamente para Angélica.
+- Desconto é aplicado ao total do pedido, não por item.
+- Não há estoque, login, controle de permissões ou integração automática com WhatsApp.
+- O PDF usa o fluxo de impressão/salvamento do navegador, pois isso evita serviços pagos e bibliotecas externas.
+- Antes de usar comercialmente em escala, teste com pedidos fictícios e mantenha backup.

@@ -1,0 +1,12 @@
+{
+  "name": "3 Razões - Força de Vendas",
+  "short_name": "3 Razões",
+  "description": "Catálogo e pedidos comerciais offline da 3 Razões",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbf7f1",
+  "theme_color": "#4d3428",
+  "orientation": "any",
+  "icons": []
+}
